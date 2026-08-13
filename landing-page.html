@@ -11,9 +11,11 @@
     :root{--navy:#10264b;--blue:#3478d4;--blue-dark:#285b96;--line:#dbe3ef;--muted:#5d6878;--surface:#fff;--page:#f7f9fc;--shadow:0 5px 18px rgba(24,50,85,.06)}
     *{box-sizing:border-box}
     body{margin:0;background:radial-gradient(circle at 8% 18%,#eaf4ff 0,transparent 24%),radial-gradient(circle at 92% 35%,#f0eaff 0,transparent 22%),var(--page);color:var(--navy);font-family:Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif}
-    .site-header{position:relative;z-index:10;display:block;width:100%;min-height:94px;background:linear-gradient(110deg,#2a5b92,#3269a7);color:#fff}
-    .brand{max-width:1440px;margin:auto;min-height:94px;padding:14px 28px;display:flex;align-items:center;gap:20px}
-    .brand img{width:66px;height:66px;border-radius:18px;object-fit:cover;border:1px solid rgba(255,255,255,.4)}
+    .site-header{position:relative;z-index:10;display:block;width:100%;min-height:94px;border-top:3px solid #e5b62f;background:linear-gradient(110deg,#28579d,#3269a7);color:#fff;overflow:hidden}
+    .site-header::after{content:"";position:absolute;inset:0;pointer-events:none;opacity:.18;background:radial-gradient(ellipse at 12% 20%,transparent 0 28px,rgba(15,48,107,.45) 29px 31px,transparent 32px),radial-gradient(ellipse at 72% 70%,transparent 0 38px,rgba(15,48,107,.35) 39px 41px,transparent 42px);background-size:190px 100px,240px 120px}
+    .brand{position:relative;z-index:1;max-width:1440px;margin:auto;min-height:94px;padding:12px 28px;display:flex;align-items:center;gap:18px}
+    .brand img{flex:0 0 70px;width:70px;height:70px;padding:2px;border-radius:50%;object-fit:cover;background:#fff;border:2px solid #e6b62c;box-shadow:0 2px 10px rgba(7,31,75,.25)}
+    .brand>div{padding-left:18px;border-left:1px solid rgba(255,255,255,.35)}
     .brand h1{font-size:25px;line-height:1.15;margin:0 0 8px;letter-spacing:.01em}
     .brand p{margin:0;color:#dceaff;font-size:16px;font-weight:700}
     main{max-width:1440px;margin:auto;padding:28px;display:flex;flex-direction:column}
@@ -53,15 +55,15 @@
     .environment-copy{min-width:0}.environment-item strong{display:block;font-size:13px;margin-bottom:5px}.environment-item span{display:block;color:var(--muted);font-size:12px;overflow-wrap:anywhere}
     footer{padding:18px;text-align:center;background:#285b96;color:#fff;border-top:3px solid #e8b72c;font-weight:650}
     @media(max-width:1100px){.grid{grid-template-columns:repeat(3,1fr)}}
-    @media(max-width:760px){.brand{padding:14px 18px}.brand h1{font-size:19px}main{padding:20px 16px}.grid{grid-template-columns:repeat(2,1fr)}.split,.environment{grid-template-columns:1fr}.section-title{white-space:normal}}
+    @media(max-width:760px){.brand{padding:12px 18px}.brand img{width:60px;height:60px;flex-basis:60px}.brand>div{padding-left:14px}.brand h1{font-size:19px}main{padding:20px 16px}.grid{grid-template-columns:repeat(2,1fr)}.split,.environment{grid-template-columns:1fr}.section-title{white-space:normal}}
     @media(max-width:480px){.grid{grid-template-columns:1fr}.service-card{min-height:140px}}
   </style>
 </head>
 <body>
   <header class="site-header">
     <div class="brand">
-      <img src="gosvg-logo-2.jpg" alt="Saint Vincent and the Grenadines crest">
-      <div><h1>Saint Vincent and the Grenadines - UID Ecosystem</h1><p>SVG-UID-Sandbox</p></div>
+      <img src="svg-new-logo.png" alt="SVG UID logo">
+      <div><h1>UID Ecosystem</h1><p>UID-Sandbox</p></div>
     </div>
   </header>
 
@@ -111,6 +113,6 @@
       </div>
     </section>
   </main>
-  <footer>© GoSVG - National Identification System</footer>
+  <footer>© National Identification System</footer>
 </body>
 </html>
