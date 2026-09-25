@@ -11,7 +11,7 @@
   <style>
     :root{--navy:#10264b;--blue:#3478d4;--blue-dark:#285b96;--line:#dbe3ef;--muted:#5d6878;--surface:#fff;--page:#f7f9fc;--shadow:0 5px 18px rgba(24,50,85,.06)}
     *{box-sizing:border-box}
-    body{min-height:100vh;margin:0;background:radial-gradient(circle at 8% 18%,#eaf4ff 0,transparent 24%),radial-gradient(circle at 92% 35%,#f0eaff 0,transparent 22%),var(--page);color:var(--navy);font-family:Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif;display:flex;flex-direction:column}
+    body{margin:0;background:radial-gradient(circle at 8% 18%,#eaf4ff 0,transparent 24%),radial-gradient(circle at 92% 35%,#f0eaff 0,transparent 22%),var(--page);color:var(--navy);font-family:Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif}
     .site-header{position:relative;z-index:10;display:block;width:100%;min-height:94px;border-top:3px solid #e5b62f;background:linear-gradient(110deg,#28579d,#3269a7);color:#fff;overflow:hidden}
     .site-header::after{content:"";position:absolute;inset:0;pointer-events:none;opacity:.18;background:radial-gradient(ellipse at 12% 20%,transparent 0 28px,rgba(15,48,107,.45) 29px 31px,transparent 32px),radial-gradient(ellipse at 72% 70%,transparent 0 38px,rgba(15,48,107,.35) 39px 41px,transparent 42px);background-size:190px 100px,240px 120px}
     .brand{position:relative;z-index:1;max-width:1440px;margin:auto;min-height:94px;padding:12px 28px;display:flex;align-items:center;gap:18px}
@@ -19,7 +19,7 @@
     .brand>div{padding-left:18px;border-left:1px solid rgba(255,255,255,.35)}
     .brand h1{font-size:25px;line-height:1.15;margin:0 0 8px;letter-spacing:.01em}
     .brand p{margin:0;color:#dceaff;font-size:16px;font-weight:700}
-    main{width:100%;max-width:1440px;margin:0 auto;padding:28px;display:flex;flex:1;flex-direction:column}
+    main{max-width:1440px;margin:auto;padding:28px;display:flex;flex-direction:column}
     .section{margin-bottom:26px}
     .identity-section{order:1}.infra-section{order:2}.auth-section{order:3}.split{order:4}.environment-section{order:5}
     .section-title{display:flex;align-items:center;gap:10px;margin:0 0 14px;font-size:17px;font-weight:800;white-space:nowrap}
@@ -73,24 +73,24 @@
     <section class="section identity-section">
       <h2 class="section-title"><span class="section-icon"><svg viewBox="0 0 24 24"><path d="M12 3a8 8 0 0 0-8 8M12 6a5 5 0 0 0-5 5c0 4-1 6-2 8M12 9a2 2 0 0 0-2 2c0 5-1 8-2 10M15 5a7 7 0 0 1 4 6c0 5 1 7 2 8M14 10c0 6 1 9 2 11M12 14c0 3-.3 5-1 7"/></svg></span>Applications</h2>
       <div class="grid">
-        <!-- <a class="service-card" href="#" target="_blank"><div class="card-top"><span class="service-icon"><svg viewBox="0 0 24 24"><circle cx="9" cy="7" r="3"/><path d="M3 20v-2a6 6 0 0 1 12 0v2M16 5a3 3 0 0 1 0 6M17 14a5 5 0 0 1 4 5v1"/></svg></span><h3>Pre-registration</h3></div><p>Pre-registration and document capture portal</p><span class="card-link">Open service</span></a>
-        <a class="service-card" href="#" target="_blank"><div class="card-top"><span class="service-icon" style="--icon:#08a5a5;--icon-bg:#e8fbfa"><svg viewBox="0 0 24 24"><rect x="2.5" y="4" width="19" height="16" rx="1.5"/><circle cx="8" cy="10" r="2.5"/><path d="M4.5 17a3.5 3.5 0 0 1 7 0M14 9h5M14 13h5M14 17h3"/></svg></span><h3>Registration Client</h3></div><p>Registration and enrollment client</p><span class="card-link">Open service</span></a>
-        <a class="service-card" href="#" target="_blank"><div class="card-top"><span class="service-icon" style="--icon:#8149d8;--icon-bg:#f3ecff"><svg viewBox="0 0 24 24"><rect x="3" y="2.5" width="18" height="19" rx="2"/><circle cx="12" cy="9" r="3.5"/><path d="M6.5 19a5.5 5.5 0 0 1 11 0"/></svg></span><h3>Resident</h3></div><p>Resident portal and self services</p><span class="card-link">Open service</span></a> -->
-        <!-- <a class="service-card" href="#" target="_blank"><div class="card-top"><span class="service-icon"><svg viewBox="0 0 24 24"><path d="M12 2.5 20 6v5.5c0 4.8-3.2 8.2-8 10-4.8-1.8-8-5.2-8-10V6z"/><path d="M12 3v18M4.5 11.5h15"/></svg></span><h3>Admin</h3></div><p>MOSIP administration dashboard</p><span class="card-link">Open service</span></a> -->
+        <a class="service-card" href="https://prereg.mosip-sandbox.svgdev.net/pre-registration-ui/" target="_blank"><div class="card-top"><span class="service-icon"><svg viewBox="0 0 24 24"><circle cx="9" cy="7" r="3"/><path d="M3 20v-2a6 6 0 0 1 12 0v2M16 5a3 3 0 0 1 0 6M17 14a5 5 0 0 1 4 5v1"/></svg></span><h3>Pre-registration</h3></div><p>Pre-registration and document capture portal</p><span class="card-link">Open service</span></a>
+        <a class="service-card" href="https://regclient.mosip-sandbox.svgdev.net" target="_blank"><div class="card-top"><span class="service-icon" style="--icon:#08a5a5;--icon-bg:#e8fbfa"><svg viewBox="0 0 24 24"><rect x="2.5" y="4" width="19" height="16" rx="1.5"/><circle cx="8" cy="10" r="2.5"/><path d="M4.5 17a3.5 3.5 0 0 1 7 0M14 9h5M14 13h5M14 17h3"/></svg></span><h3>Registration Client</h3></div><p>Registration and enrollment client</p><span class="card-link">Open service</span></a>
+        <a class="service-card" href="https://resident.mosip-sandbox.svgdev.net" target="_blank"><div class="card-top"><span class="service-icon" style="--icon:#8149d8;--icon-bg:#f3ecff"><svg viewBox="0 0 24 24"><rect x="3" y="2.5" width="18" height="19" rx="2"/><circle cx="12" cy="9" r="3.5"/><path d="M6.5 19a5.5 5.5 0 0 1 11 0"/></svg></span><h3>Resident</h3></div><p>Resident portal and self services</p><span class="card-link">Open service</span></a>
+        <a class="service-card" href="https://admin.mosip-sandbox.svgdev.net" target="_blank"><div class="card-top"><span class="service-icon"><svg viewBox="0 0 24 24"><path d="M12 2.5 20 6v5.5c0 4.8-3.2 8.2-8 10-4.8-1.8-8-5.2-8-10V6z"/><path d="M12 3v18M4.5 11.5h15"/></svg></span><h3>Admin</h3></div><p>MOSIP administration dashboard</p><span class="card-link">Open service</span></a>
         <a class="service-card" href="https://pmp.mosip-sandbox.svgdev.net" target="_blank"><div class="card-top"><span class="service-icon" style="--icon:#ed8b18;--icon-bg:#fff5e7"><svg viewBox="0 0 24 24"><rect x="4" y="4.5" width="16" height="17" rx="2"/><path d="M9 4.5V2.5h6v2M8 9h8M8 13h8M8 17h6"/></svg></span><h3>PMP</h3></div><p>Partner Management Portal</p><span class="card-link">Open service</span></a>
-        <!-- <a class="service-card" href="https://esignet.mosip-sandbox.svgdev.net" target="_blank"><div class="card-top"><span class="service-icon" style="--icon:#6749cf;--icon-bg:#f0edff">eS</span><h3>eSignet</h3></div><p>Secure digital identity and authentication</p><span class="card-link">Open service</span></a>
-        <a class="service-card" href="https://healthservices.mosip-sandbox.svgdev.net" target="_blank"><div class="card-top"><span class="service-icon" style="--icon:#df4569;--icon-bg:#fff0f3"><svg viewBox="0 0 24 24"><path d="M6 3v6a5 5 0 0 0 10 0V3M4 3h4M14 3h4M11 14v2a5 5 0 0 0 5 5h1"/><circle cx="19" cy="19" r="2.5"/></svg></span><h3>Health Services</h3></div><p>Health service application portal</p><span class="card-link">Open service</span></a> -->
+        <a class="service-card" href="https://esignet.mosip-sandbox.svgdev.net" target="_blank"><div class="card-top"><span class="service-icon" style="--icon:#6749cf;--icon-bg:#f0edff">eS</span><h3>eSignet</h3></div><p>Secure digital identity and authentication</p><span class="card-link">Open service</span></a>
+        <a class="service-card" href="https://healthservices.mosip-sandbox.svgdev.net" target="_blank"><div class="card-top"><span class="service-icon" style="--icon:#df4569;--icon-bg:#fff0f3"><svg viewBox="0 0 24 24"><path d="M6 3v6a5 5 0 0 0 10 0V3M4 3h4M14 3h4M11 14v2a5 5 0 0 0 5 5h1"/><circle cx="19" cy="19" r="2.5"/></svg></span><h3>Health Services</h3></div><p>Health service application portal</p><span class="card-link">Open service</span></a>
       </div>
     </section>
 
-    <!-- <section class="section auth-section">
+    <section class="section auth-section">
       <h2 class="section-title"><span class="section-icon"><svg viewBox="0 0 24 24"><rect x="4" y="10" width="16" height="11" rx="2"/><path d="M8 10V7a4 4 0 0 1 8 0v3M12 14v3"/></svg></span>Auth &amp; Security</h2>
       <div class="grid">
         <a class="service-card" href="https://iam.mosip-sandbox.svgdev.net" target="_blank"><div class="card-top"><span class="service-icon brand-logo"><svg viewBox="0 0 48 48" aria-hidden="true"><path d="M13 5h22l11 19-11 19H13L2 24z" style="fill:#34a9bd;stroke:none"/><path d="M18 8h12l9 16-9 16H18L9 24z" style="fill:#18567d;stroke:none"/><path d="M21 12h7l7 12-7 12h-7l-7-12z" style="fill:white;stroke:none"/><path d="m21 17 8 14M29 17l-8 14" style="stroke:#53b6c7;stroke-width:3"/></svg></span><h3>Keycloak</h3></div><p>Identity and access management</p><span class="card-link">Open service</span></a>
       </div>
-    </section> -->
+    </section>
 
-    <!-- <section class="section infra-section">
+    <section class="section infra-section">
       <h2 class="section-title"><span class="section-icon"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="7" rx="2"/><rect x="3" y="14" width="18" height="7" rx="2"/><path d="M7 6.5h.01M7 17.5h.01M11 6.5h7M11 17.5h7"/></svg></span>Infrastructure / Operations</h2>
       <div class="grid">
         <a class="service-card" href="https://activemq.mosip-sandbox.svgdev.net" target="_blank"><div class="card-top"><span class="service-icon brand-logo" style="--icon:#e84b78"><svg viewBox="0 0 48 48"><path d="m14 4 9 5v10l-9 5-9-5V9zM34 4l9 5v10l-9 5-9-5V9zM24 23l9 5v10l-9 5-9-5V28zM18 21l3 4M30 21l-3 4"/></svg></span><h3>ActiveMQ</h3></div><p>Message broker and queue management</p><span class="card-link">Open service</span></a>
@@ -99,9 +99,9 @@
         <a class="service-card" href="https://kibana.mosip-sandbox.svgdev.net" target="_blank"><div class="card-top"><span class="service-icon brand-logo"><svg viewBox="0 0 48 48"><path d="M8 5h29L18 27H8z" style="fill:#e94288;stroke:none"/><path d="M8 27h10l19 16H8z" style="fill:#00b4aa;stroke:none"/><path d="m18 27 19-22v38z" style="fill:#263238;stroke:none"/><path d="m18 27 19 16-10-24z" style="fill:#f4d85a;stroke:none;opacity:.75"/></svg></span><h3>Kibana</h3></div><p>Log analytics and visualization</p><span class="card-link">Open service</span></a>
         <a class="service-card" href="https://smtp.mosip-sandbox.svgdev.net" target="_blank"><div class="card-top"><span class="service-icon" style="--icon:#de7d20;--icon-bg:#fff6e9">✉</span><h3>SMTP</h3></div><p>Email delivery and testing service</p><span class="card-link">Open service</span></a>
       </div>
-    </section> -->
+    </section>
 
-    <!-- <div class="split section">
+    <div class="split section">
       <section><h2 class="section-title"><span class="section-icon"><svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="m7 9 3 3-3 3M13 15h4"/></svg></span>Developer / APIs</h2><div class="panel quick-links"><a href="https://api.mosip-sandbox.svgdev.net/.well-known/" target="_blank">.well-known ↗</a><a href="https://api.mosip-sandbox.svgdev.net/inji/" target="_blank">INJI ↗</a><a href="https://api.mosip-sandbox.svgdev.net/mosip-certs/" target="_blank">MOSIP Certs ↗</a></div></section>
       <section><h2 class="section-title"><span class="section-icon"><svg viewBox="0 0 24 24"><path d="M9 5H6a2 2 0 0 0-2 2v13h16V7a2 2 0 0 0-2-2h-3M9 3h6v4H9z"/><path d="m8 13 2.5 2.5L16 10"/></svg></span>Compliance &amp; Audit</h2><a class="service-card compliance-card" href="https://compliance.mosip-sandbox.svgdev.net" target="_blank"><div class="card-top"><span class="service-icon"><svg viewBox="0 0 24 24"><path d="M12 2.5 20 6v5.5c0 4.8-3.2 8.2-8 10-4.8-1.8-8-5.2-8-10V6z"/><path d="M12 3v18M4.5 11.5h15"/></svg></span><h3>Compliance</h3></div><p>Compliance dashboard and reports</p></a></section>
     </div>
@@ -113,7 +113,7 @@
         <div class="environment-item"><span class="environment-icon"><svg viewBox="0 0 24 24"><path d="M8 18H6a4 4 0 0 1 0-8 6 6 0 0 1 11.5-1.5A4.5 4.5 0 0 1 18 18h-2M12 12v9M9 15l3-3 3 3"/></svg></span><div class="environment-copy"><strong>Internal API</strong><span>https://api-internal.mosip-sandbox.svgdev.net</span></div></div>
         <div class="environment-item"><span class="environment-icon"><svg viewBox="0 0 24 24"><ellipse cx="12" cy="5" rx="8" ry="3"/><path d="M4 5v7c0 1.7 3.6 3 8 3s8-1.3 8-3V5M4 12v7c0 1.7 3.6 3 8 3s8-1.3 8-3v-7"/></svg></span><div class="environment-copy"><strong>PostgreSQL</strong><span>postgres.mosip-sandbox.svgdev.net:5432</span></div></div>
       </div>
-    </section> -->
+    </section>
   </main>
   <footer>© National Identification System</footer>
 </body>
